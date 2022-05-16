@@ -888,7 +888,8 @@ proto_handle_blob(void)
 		else if (!strcmp(method, "perform") ||
 			 !strcmp(method, "rtty") ||
 			 !strcmp(method, "wifiscan") ||
-			 !strcmp(method, "trace"))
+			 !strcmp(method, "trace") ||
+			 !strcmp(method, "logdump"))
 			action_handle(rpc, method, 0, 1);
 		else if (!strcmp(method, "leds"))
 			leds_handle(rpc);
